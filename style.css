@@ -6,7 +6,7 @@
 
 
 .header{
-    min-width: 60vh;
+    min-width: 0vh;
     width : 100%;
     min-height: 100vh;
     background-image: url(images/web.png);
@@ -136,7 +136,7 @@ nav .fa{
             padding: 30px;
         }
     .header{
-     min-width: 30vh;
+     min-width: 0vh;
     }    
 }
 
