@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dople Blogs</title>
+
+    <link rel="stylesheet" href="style.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+</head>
+<body>
+    <nav> 
+        <a href="main.html">
+            <img src="images/Artboard 2.png">
+            </a>
+            <a href="main.html">
+           <span class="dople_logo">
+               <h1>
+                   Dople
+                </h1>
+                
+            </span>
+         </a>
+         <div class="nav_links" id="navLinks">
+            <i class="fa fa-bars" onclick="hideMenu()"></i>
+             <ul>
+                 <li><a href="">HOME</a></li>
+                 <li><a href="">ABOUT</a></li>
+                 <li><a href="">EXPLORE</a></li>
+                 <li><a href="">CONTACT US</a></li>
+             </ul>
+         </div>
+         <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <section class="header">   
+       
+        <div class="text_box">
+            <h1>
+                Dople
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id odit nostrum dolores itaque rerum voluptate eaque ut, repellendus possimus dolor fugit, tempore recusandae earum voluptatem molestiae repudiandae at vero ducimus.
+                
+        </p>
+        <a href="" class="ex_btn">Explore</a>
+        </div>
+    </section>
+
+<section class="content">
+    <h1>
+        Our Content
+    </h1>
+    <div class="cont_row">
+        <div class="cont_col">
+             <h3>
+                 MOVIES
+             </h3>
+             <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto adipisci, aliquid culpa facere officiis repellat blanditiis! Laudantium ratione unde autem veniam porro? Dolorum perspiciatis accusamus reiciendis odit perferendis recusandae!
+             </p>
+        </div>
+        <div class="cont_col">
+            <h3>
+                WEB SERIES
+            </h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto adipisci, aliquid culpa facere officiis repellat blanditiis! Laudantium ratione unde autem veniam porro? Dolorum perspiciatis accusamus reiciendis odit perferendis recusandae!
+            </p>
+       </div>
+       <div class="cont_col">
+        <h3>
+            ANIME
+        </h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem architecto adipisci, aliquid culpa facere officiis repellat blanditiis! Laudantium ratione unde autem veniam porro? Dolorum perspiciatis accusamus reiciendis odit perferendis recusandae!
+        </p>
+   </div>
+    </div>
+</section>
+
+<section class="why">
+    <h1>
+        Why Dople ?
+    </h1>
+    <div class="why_div">
+    <img src="images/about dople 2.png" alt="" class="why_img">
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis sit expedita iste eligendi error nisi cumque, ipsum ratione impedit quia distinctio reiciendis harum laborum nulla ex doloribus ullam inventore culpa.
+    </p>
+</div>
+</section>
+
+<section class="contact">
+    <h1>
+        Contribute in Dople
+    </h1>
+    <a href="" class="ex_btn">
+        Contact Us
+    </a>
+</section>
+
+<section class="footer">
+    <h4>
+        Dople @2022
+    </h4>
+    <p>
+        Thanks from Dople 
+    </p>
+    <div class="icons">
+        <i class="fa fa-facebook" ></i>
+        <i class="fa fa-twitter" ></i>
+        <i class="fa fa-instagram" ></i>
+    </div>
+</section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

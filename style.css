@@ -1,0 +1,264 @@
+*{
+    margin :0;
+    padding : 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.header{
+    min-width: 100vh;
+    width : 100%;
+    min-height: 100vh;
+    background-image: url(images/web.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    padding: 0.7% 6%;
+    background-color: aliceblue;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    opacity: 0.8;
+    position: sticky;
+    top: 0;
+}
+nav img{
+    width:50px;
+}
+.dople_logo{
+    list-style: none;
+    display: inline-block;
+    padding: 0px 10px;
+    color: #6b705c;
+    position: relative;
+    text-decoration: none;
+    font-size: 30px;
+}
+.nav_links{
+flex: 1;
+text-align: right;
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav_links ul li a{
+    color: #081c15;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #656d4a;
+    display : block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+}
+.text_box{
+    width: 90%;
+    color: #95d5b2;
+    position:absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text_box h1{
+    font-size: 62px;
+}
+.text_box p{
+     margin: 10px 0 40px;
+     font-size: 14px;
+     color: #95d5b2;
+}
+.ex_btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #95d5b2;
+    border: 1px solid white ;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.ex_btn:hover{
+       border: 1px solid red;
+       background: #660708;
+       transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width:700px){
+    .text_box h1{
+        font-size: 30px;
+    }
+    .nav_links{
+        position: absolute;
+        background: white;
+        height: 100vh;
+        width: 200px;
+        height: 300px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+        }
+        .nav_links ul li{
+            display: block;
+        }
+        nav .fa{
+            display: block;
+            color: black;
+            margin: 20px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+        .nav_links ul{
+            margin-top: 20px;
+            padding: 30px;
+        }
+}
+
+.content{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.content h1{
+    font-size: 56px;
+    font-weight: 600;
+}
+.cont_row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.cont_col{
+    flex-basis: 31%;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.cont_col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.cont_col:hover{
+    box-shadow: 0 0 20px 0 #0b090a;
+    background-color: #687259;
+}
+@media(max-width: 700px){
+    .cont_row{
+        flex-direction: column;
+       justify-items: center;
+    }
+}
+
+.why{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.why_div{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.why h1{
+    font-size: 56px;
+    font-weight: 600;
+}
+.why_div p{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+.why_img{
+    width: 40%;
+}
+@media(max-width: 700px){
+    .why_div{
+        flex-direction: column;
+       justify-items: center;
+    }
+    .why_img{
+        width: 50%;
+        margin-left: 25%
+    }
+}
+
+.contact{
+    margin: 100px auto;
+    width : 80%;
+    max-height: 50vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)) ,url(images/zane-lee-LvVw6wRmGAM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.contact h1{
+    color: whitesmoke;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width: 700px){
+    .contact h1{
+        font-size: 24px;
+    }
+}
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #eee;
+    z-index: 3;
+    opacity: 0.9;
+}
+.footer h4{
+    margin-bottom: 0px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer p{
+    margin-bottom: 10px;
+}
+.icons .fa{
+    color: #0b090a;
+    margin: 0 5px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.icons .fa:hover{
+color: #3a5a40;
+}
